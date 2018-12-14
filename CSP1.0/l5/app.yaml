@@ -1,0 +1,22 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: level5.app
+
+- url: /static
+  static_dir: static
+
+- url: /level5/frame/signup
+  static_files: signup.html
+  upload: signup.html
+
+- url: /level5/frame/confirm
+  static_files: confirm.html
+  upload: confirm.html
+
+- url: /level5/frame/welcome
+  static_files: welcome.html
+  upload: welcome.html

@@ -1,0 +1,13 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: level2.app
+
+- url: /index2\.html
+  script: level2.app
+
+- url: /static
+  static_dir: static

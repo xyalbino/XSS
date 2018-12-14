@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Internal game scripts/styles, mostly boring stuff -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' ;script-src 'self' 'nonce-{{nonce}}' ">
+    <script nonce="{{nonce}}" src="/static/game-frame.js"></script>
+
+    <link rel="stylesheet" href="/static/game-frame-styles.css" />
+  </head>
+  <body id="level4">
+    <img src="/static/logos/level4.png" />
+    <br>
+    <img id="gif" src="/static/loading.gif"/>
+    <br>
+    <div id="message">Your timer will execute in {{ timer }} seconds.</div>
+  <script nonce="{{nonce}}" src="/static/level4.js"></script>
+  </body>
+</html>
